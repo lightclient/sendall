@@ -1,0 +1,10 @@
+push0           # [retsize]
+push0           # [retost, retsize]
+push0           # [argsize, retost, retsize]
+push0           # [argost, argsize, retost, retsize]
+selfbalance     # [balance, argost, argsize, retost, retsize]
+coinbase        # [coinbase, balance, argost, argsize, retost, retsize]
+gas             # [gas, coinbase, balance, argost, argsize, retost, retsize]
+call            # []
+
+stop            # []
